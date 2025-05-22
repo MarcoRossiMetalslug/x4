@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo copy 4.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="logo">
+                <img src="img/Logo-ISIL.webp" alt="">
+            </div>
+            <div id="titulo">
+                <h1>Introduccion a la programacion</h1>
+            </div>
+
+        </div>
+        <div id="contenido">
+            <div id="enunciado">
+                <p>Ejercicio 01 :Diseñe un programa que permita el ingreso el nombre de un estudiante, el nombre del curso, su nota final, el número de clases del ciclo y el número de clases que no asistió. En el caso que las ausencias superen el 20% del número de clases del ciclo su nota definitiva será 0 (cero). Visualice el nombre, la asignatura, la nota y una anotación, en el caso de la nota cero la anotación será el motivo de la desaprobación.</p>
+            </div>
+            <div id="resultado">
+                <script>
+                    // Solicitar al usuario la cantidad de créditos matriculados
+                    var creditos = prompt("Ingrese la cantidad de créditos matriculados:");
+
+                    // Convertir el valor ingresado a número decimal
+                    creditos = parseFloat(creditos);
+
+                    // Declarar variables
+                    var costoPorCredito = 50;
+                    var costoMatricula = 250;
+                    var inversionCreditos, inversionTotal;
+
+                    // Calcular la inversión por los créditos
+                    inversionCreditos = creditos * costoPorCredito;
+
+                    // Verificar si está exonerado de la matrícula
+                    if (creditos > 12) {
+                        inversionTotal = inversionCreditos; // Exonerado de matrícula
+                    } else {
+                        inversionTotal = inversionCreditos + costoMatricula; // Se suma la matrícula
+                    }
+
+                    // Mostrar resultados
+                    document.write("Créditos matriculados: " + creditos + "<br>");
+                    document.write("Costo por créditos: S/. " + inversionCreditos.toFixed(2) + "<br>");
+
+                    if (creditos > 12) {
+                        document.write("Exonerado del pago de matrícula.<br>");
+                    } else {
+                        document.write("Costo de matrícula: S/. " + costoMatricula.toFixed(2) + "<br>");
+                    }
+
+                    document.write("Inversión total por ciclo: S/. " + inversionTotal.toFixed(2));
+
+                              
+                </script>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

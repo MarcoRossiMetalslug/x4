@@ -1,0 +1,50 @@
+#contenedor{
+    width: 800px;
+    border:3px solid blue;
+    margin: 50px auto;
+    background-color: beige;
+    
+}
+
+#logo img{
+    width: 31%;
+    border-radius: 50%;
+}
+#cabecera{
+    height: 100px;
+    border: 1px solid grey;
+    background-color: rgb(173, 154, 154);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+#contenido{
+    height: 300px;
+    border:1px solid red;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+}
+
+#enunciado{
+    width: 60%;
+    height: 200px;
+    background-color: lightgray;
+}
+#resultado{
+    background-color: lightpink;
+    width: 35%;
+    height: 66%;
+    
+}
+
+#enunciado p{
+    font-size: 20px;
+    pad: 5px;
+}
